@@ -3,6 +3,9 @@ os: linux
 files:
   - source: /index.html
     destination: /var/www/html
+hooks:
+        #  BeforeInstall:  
+
   AfterInstall:
     - location: scripts/webserver_restart.sh
       timeout: 300
