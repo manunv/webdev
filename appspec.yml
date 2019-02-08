@@ -1,0 +1,9 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/html
+  AfterInstall:
+    - location: scripts/webserver_restart.sh
+      timeout: 300
+      runas: root
